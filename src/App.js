@@ -1,13 +1,10 @@
-import logo from "./logo.svg";
 import "./App.css";
-import ParentWatch from "./components/ParentWatch/ParentWatch";
-import Cosmetics from "./components/Cosmetics/Cosmetics";
+import LoadData from "./components/loadData/LoadData";
 
 function App() {
   return (
     <div className="App">
-      <ParentWatch></ParentWatch>
-      <Cosmetics></Cosmetics>
+      <LoadData></LoadData>
     </div>
   );
 }
