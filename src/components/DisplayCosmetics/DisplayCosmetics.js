@@ -1,7 +1,10 @@
 import React from "react";
 
 const DisplayCosmetics = (props) => {
-  const { name, price } = props.cosmetic;
+  const { id, name, price } = props.cosmetic;
+  let getItem = (id, name) => {
+    console.log(`Id is ${id} and name is ${name}`);
+  };
   return (
     <div
       style={{
@@ -13,6 +16,13 @@ const DisplayCosmetics = (props) => {
     >
       <h1>Name:{name}</h1>
       <p>Price:{price}</p>
+      <button
+        onClick={() => {
+          getItem(id, name);
+        }}
+      >
+        Add to Cart
+      </button>
     </div>
   );
 };
